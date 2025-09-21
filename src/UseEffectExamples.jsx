@@ -10,11 +10,11 @@ const UseEffectExamples = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   
   useEffect(() => {
-    console.log('Component rendered or re-rendered');
+    console.log('Component renderrrrrr');
   });
 
   useEffect(() => {
-    console.log('Component mounted (runs only once)');
+    console.log('Componentttttt mounted');
     
     const fetchData = async () => {
       try {
@@ -32,7 +32,7 @@ const UseEffectExamples = () => {
   }, []); 
 
   useEffect(() => {
-    console.log('Setting up window resize listener');
+    console.log('Set up');
     
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -41,7 +41,7 @@ const UseEffectExamples = () => {
     window.addEventListener('resize', handleResize);
     
     return () => {
-      console.log('Cleaning up window resize listener');
+      console.log('Cleaningggg');
       window.removeEventListener('resize', handleResize);
     };
   }, []);
@@ -53,19 +53,19 @@ const UseEffectExamples = () => {
     1: {
       name: 'Ishwari',
       email: 'ishwari@gmail.com',
-      phone: '+91 98765 43210',
+      phone: '+91 98765ttn 43210',
       city: 'Pune',
       profession: 'Student'
     },
     2: {
       name: 'Riya',
       email: 'riya@gmail.com',
-      phone: '+91 87654 32109',
+      phone: '+91 87654 32109738',
       city: 'Pune',
       profession: 'Doctor'
     },
     3: {
-      name: 'Isha',
+      name: 'Ishaaaa',
       email: 'isha@gmail.com',
       phone: '+91 76543 21098',
       city: 'Pune',
