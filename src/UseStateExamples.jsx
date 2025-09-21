@@ -3,18 +3,11 @@ import React, { useState } from 'react';
 export default function UseStateExamples() {
 
   const [name, setName] = useState('');
-  
-
   const [count, setCount] = useState(0);
-  
-  
   const [isVisible, setIsVisible] = useState(false);
-  
-
   const [items, setItems] = useState(['Apple', 'Banana', 'Orange']);
   const [newItem, setNewItem] = useState('');
-  
- 
+
   const [score, setScore] = useState(0);
 
 
@@ -28,8 +21,6 @@ export default function UseStateExamples() {
   const handleRemoveItem = (index) => {
     setItems(items.filter((_, i) => i !== index));
   };
-
-
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-8 min-h-screen bg-gray-50">
@@ -90,7 +81,7 @@ export default function UseStateExamples() {
           </button>
           {isVisible && (
             <div className="p-4 bg-purple-100 rounded border-l-4 border-purple-500">
-              <p>🎉 This content is now visible! Toggle the button to hide it.</p>
+              <p>This content is now visible! Toggle the button to hide it.</p>
             </div>
           )}
         </div>
